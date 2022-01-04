@@ -128,5 +128,4 @@ def main():
             print("\nPossible solutions count: " + str(len(problem.get_solutions())))  
         input()     
 
-if __name__ == "__main__":
-    main()
+main()
