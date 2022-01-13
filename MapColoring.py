@@ -120,12 +120,13 @@ problem.add_constraint(DiffrenetConstraint(["V", "NSW"]))
 
 def main():
     while True:
-        print("For printing all solutions enter '1'\nFor printing the count of solutions enter '2'")
+        print("For printing all solutions enter '1'\nFor printing the count of solutions enter '2'\nTo stop enter 'stop'")
         ipt=input()
         if ipt == '1':
             print(problem.get_solutions())
         elif ipt=='2':
             print("\nPossible solutions count: " + str(len(problem.get_solutions())))  
-        input()     
+        elif ipt == 'stop':
+            break      
 
 main()
